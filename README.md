@@ -47,12 +47,19 @@ Two screenshots of the data model are included in this repository.
 
 The first screenshot was taken immediately after loading the initial sample data into Power BI. At that stage, most relationships were inferred as **one-to-one (1:1)** because the sample data did not yet contain repeated foreign key values.
 
+
+![Entity Relational Diagram initial - (cardinality demonstration)](images/powerbi_model_1.png)
+
+
 Additional sample records were then inserted to better represent real-world business scenarios, such as:
 
 * One landlord owning multiple properties.
 * One lease having multiple payment records.
 
 After refreshing the model, Power BI automatically updated some relationships to **one-to-many (1:*)**, reflecting the intended database design.
+
+
+![Entity Relational Diagram Actual (cardinality demonstration)](images/powerbi_model_2.png)
 
 This demonstrates an important concept: **Power BI infers relationship cardinality from the data currently loaded into the model rather than solely from the foreign key definitions in the source database.** As more representative data is introduced, the detected relationships may change to better align with the underlying business rules.
 
@@ -106,4 +113,9 @@ Examples include:
 * SQL DDL and DML
 
 ---
+
+### Author
+
+Latifah Usaini Bashir
+Data Analytics/Science Enthusiast
 
